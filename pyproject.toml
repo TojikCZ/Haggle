@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "haggle"
+version = "0.1.0-dev"
+description = "Haggle - an accessible Boggle like game"
+authors = ["Tomáš Jozífek <jozifektomas@gmail.com>", "Lukáš tyrychtr <lukastyrychtr@gmail.com>"]
+license = "GPLv3"
+readme = "README.md"
+dynamic = ["version", "dependencies"]
+
+[project.scripts]
+haggle = "haggle.__main__:main"
+
+[project.dependencies]
+python = "^3.9"
+fastapi = "*"
+pydantic = "*"
+# flask = "*" # Uncomment this if you decide to use Flask
+
+[project.dev-dependencies]
+# Add your development dependencies here
